@@ -8,6 +8,7 @@ export const ProductsList = ({
   disabledDecrementButton,
   totalPrice,
 }) => {
+  
   return (
     <TableWrapper>
       <StyledTable>
@@ -33,7 +34,7 @@ export const ProductsList = ({
               <td style={{ width: "298px" }}>
                 <QuantityControl>
                   <button
-                    // disabled={item.amount === item.stock}
+
                     className="incBtn"
                     onClick={() => increment(item.id)}
                   >
